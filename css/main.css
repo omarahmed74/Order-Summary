@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../images/pattern-background-desktop.svg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: hsl(225, 100%, 94%);
+    position: relative;
+    font-size: 16px;
+}
+
+.container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% ,-50%);
+    max-width: 450px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.text {
+    padding: 7px;
+    text-align: center;
+}
+
+.text .title {
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.text .p {
+    color: #8a8a8a;
+    margin-bottom: 25px;
+}
+
+.card {
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 12px;
+    display: flex;
+    padding: 25px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-2 {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.card-2 div {
+    margin-left: 20px;
+}
+
+.card-2 div h5 {
+    font-weight: 900;
+    font-size: 15px;
+    color: hsl(223, 47%, 23%);
+}
+
+.card-2 div p {
+    font-size: 14px;
+    color: #8a8a8a;
+}
+
+.card a {
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+    text-decoration: none;
+    transition: all .4s;
+}
+
+.card a:hover {
+    color: hsl(245, 75%, 52%);
+}
+
+a.btn1 {
+    display: block;
+    color: hsl(223, 47%, 23%);
+    text-decoration: none;
+    color: white;
+    background-color: hsl(245, 75%, 52%);
+    padding: 20px 0px;
+    border-radius: 12px;
+    margin: 20px 0px;
+}
+
+a.btn2 {
+    color: hsl(224, 23%, 55);
+    text-decoration: none;
+    font-weight: 900;
+    transition: all .4s;
+}
+
+a.btn2:hover {
+    color: hsl(245, 75%, 52%);
+}
+
+@media only screen and (max-width:450px) {
+
+    body {
+      background-image: url(../images/pattern-background-mobile.svg);
+      font-size: 14px;
+    }
+    .container {
+        width: 87%;
+    }
+
+    .text .title {
+        font-size: 23px;
+    }
+
+    div.card{
+        padding: 12px;
+    }
+
+    .card-2 div {
+        margin-left: 10px;
+    }
+
+    a.btn1,a.btn2,.card a {
+        font-size: 13px;
+    }
+
+    
+    
+}
